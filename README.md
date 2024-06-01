@@ -15,4 +15,4 @@ One-to-one example:
 Country.hasOne(Capital);
 Capital.belongsTo(Country);
 ```
-In this case, the capitals table should store the foreign key (contryId), and so to own the relationship.
+In this case, the __capitals__ table should store the foreign key (contryId), and so to own the relationship.
