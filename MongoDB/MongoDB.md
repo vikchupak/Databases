@@ -2,7 +2,7 @@ In MongoDB there are no ACID constrains like unique, required or even out-the-bo
 
 The only way to enforce uniqueness is to create unique index. But it is more like a workaround.\
 Mongoose can validate required, but it is the validation on ODM/code level, not the DBMS.\
-There is no way to forbid null values at MongoDB level, only on Mongoose.\
+There is no way to forbid null values at MongoDB level, only at ODM/Mongoose.\
 There is no ACID transactions out-the-box.
 
 MongoDB follows BASE transaction model.
