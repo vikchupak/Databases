@@ -7,9 +7,17 @@ https://www.mongodb.com/docs/drivers/node/current/fundamentals/bson/undefined-va
 In MongoDB there are no ACID constrains like unique, required or even out-the-box transactions(which causes race condition problems).
 
 The only way to enforce uniqueness is to create unique index. But it is more like a workaround.\
-Mongoose can validate required, but it is the validation on ODM/code level, not the DBMS. (https://www.mongodb.com/docs/manual/core/schema-validation/specify-json-schema/#std-label-schema-validation-json ?) \
-There is no way to forbid null values at MongoDB level, only at ODM/Mongoose.\
 There is no ACID transactions out-the-box.
+
+By default there is no schema validation at MongoDB level.
+But we can still set the validation yourself. We can enforce required and non null, for example.
+
+MongoDB\
+https://www.mongodb.com/docs/manual/core/schema-validation/ \
+MongoDB Compass\
+https://www.mongodb.com/docs/compass/current/validation/
+
+![Screenshot from 2024-06-02 00-08-31](https://github.com/VIK2395/Databases/assets/50545334/7a70d3be-2ce5-4eac-a760-993e73825834)
 
 # Transactions
 
