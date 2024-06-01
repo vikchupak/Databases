@@ -64,3 +64,6 @@ __So, MongoDB is bad in transactions.__
 
 # Transactions vs atomic operations
 
+![Screenshot from 2024-06-01 20-38-54](https://github.com/VIK2395/Databases/assets/50545334/8dbf8e23-23cd-4fbc-a4cc-822c40829db4)
+
+https://mongoosejs.com/docs/tutorials/findoneandupdate.html#atomic-updates
