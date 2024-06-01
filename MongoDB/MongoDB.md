@@ -42,6 +42,8 @@ async createAndSaveInfoQueue(identifier) {
   }
 ```
 
+![Screenshot from 2024-06-01 20-24-00](https://github.com/VIK2395/Databases/assets/50545334/28e4ff71-e9ab-45b2-b2ae-9c3a4bb815cd)
+
 If we run this code, we will get the following error:
 
 ```MongoError: Transaction numbers are only allowed on a replica set member or mongos.```
@@ -56,4 +58,9 @@ https://www.mongodb.com/community/forums/t/mongoservererror-writeconflict-error-
 
 This is because when the first transaction locks the docs, the second transaction may not wait long enough for the lock release and gets terminated.
 
+https://medium.com/mongodb-performance-tuning/tuning-mongodb-transactions-354311ab9ed6
+
 __So, MongoDB is bad in transactions.__
+
+# Transactions vs atomic operations
+
