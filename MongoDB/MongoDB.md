@@ -1,14 +1,19 @@
+By default, the MongoDB driver serializes undefined values as null values during write operations.\
+We can set to ignore the undefined.\
+https://www.mongodb.com/docs/drivers/node/current/fundamentals/bson/undefined-values/#ignore-undefined-values
+
+# ACID
+
 In MongoDB there are no ACID constrains like unique, required or even out-the-box transactions(which causes race condition problems).
 
 The only way to enforce uniqueness is to create unique index. But it is more like a workaround.\
-Mongoose can validate required, but it is the validation on ODM/code level, not the DBMS.\
+Mongoose can validate required, but it is the validation on ODM/code level, not the DBMS. (https://www.mongodb.com/docs/manual/core/schema-validation/specify-json-schema/#std-label-schema-validation-json ?) \
 There is no way to forbid null values at MongoDB level, only at ODM/Mongoose.\
 There is no ACID transactions out-the-box.
 
-MongoDB follows BASE transaction model.
-
-
 # Transactions
+
+MongoDB follows BASE transaction model.
 
 Example of a function using mongoose transactions:
 ```javascript
