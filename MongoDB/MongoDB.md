@@ -70,3 +70,16 @@ About passing session to operations\
 ![Screenshot from 2024-06-01 20-38-54](https://github.com/VIK2395/Databases/assets/50545334/8dbf8e23-23cd-4fbc-a4cc-822c40829db4)
 
 https://mongoosejs.com/docs/tutorials/findoneandupdate.html#atomic-updates
+
+# Indexes
+
+__Note: in MongoDB null can be an index key.__
+
+There are 3 __main__ types of indexes in MongoDB:
+- non-sparse index (classic, indexes all docs. Stores null values for those documents that do not contain the indexed field)
+- sparse index (skips docs with missing field being indexed) https://www.mongodb.com/docs/manual/core/index-sparse/
+- partial index (include in index docs that meet spesific filter criteria) https://www.mongodb.com/docs/manual/core/index-partial/
+
+__All index types and their properties__\
+https://www.mongodb.com/docs/manual/core/indexes/index-types/ \
+https://www.mongodb.com/docs/manual/core/indexes/index-properties/
