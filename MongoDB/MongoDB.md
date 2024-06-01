@@ -1,8 +1,8 @@
 In MongoDB there are no ACID constrains like unique, required or even out-the-box transactions(which causes race condition problems).
 
-The only way to enforce uniqueness is to create unique index. But it is more like workaround.
-Mongoose can validate required, but it is the validation on ODM/code level, not the DBMS.
-There is no transactions in operations like with ACID.
+The only way to enforce uniqueness is to create unique index. But it is more like a workaround.\
+Mongoose can validate required, but it is the validation on ODM/code level, not the DBMS.\
+There is no ACID transactions out-the-box.
 
 MongoDB follows BASE transaction model.
 
