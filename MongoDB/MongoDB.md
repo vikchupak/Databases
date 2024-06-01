@@ -48,12 +48,12 @@ If we run this code, we will get the following error:
 
 This is because transactions are only possible on a replica set https://habr.com/ru/articles/417131/
 
-But even when the replica set is enabled and we run multiple transactions at once, we get another error:
+But even when the replica set is enabled, and we run multiple transactions at once, we get another error:
 
 ```MongoServerError: WriteConflict error: this operation conflicted with another operation. Please retry your operation or multi-document transaction.```
 
 https://www.mongodb.com/community/forums/t/mongoservererror-writeconflict-error-this-operation-conflicted-with-another-operation-please-retry-your-operation-or-multi-document-transaction/206298
 
-This is because when the first transaction locks the docs, the second transaction may not wait long enough for the lock release and get terminated.
+This is because when the first transaction locks the docs, the second transaction may not wait long enough for the lock release and gets terminated.
 
 __So, MongoDB is bad in transactions.__
