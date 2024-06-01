@@ -62,6 +62,9 @@ https://medium.com/mongodb-performance-tuning/tuning-mongodb-transactions-354311
 
 __So, MongoDB is bad in transactions.__
 
+About passing session to operations\
+![Screenshot from 2024-06-01 20-24-00](https://github.com/VIK2395/Databases/assets/50545334/28e4ff71-e9ab-45b2-b2ae-9c3a4bb815cd)
+
 # Transactions vs atomic operations
 
 ![Screenshot from 2024-06-01 20-38-54](https://github.com/VIK2395/Databases/assets/50545334/8dbf8e23-23cd-4fbc-a4cc-822c40829db4)
