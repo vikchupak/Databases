@@ -44,7 +44,7 @@ async createAndSaveInfoQueue(identifier) {
 
 If we run this code, we will get the following error:
 
-```Transaction numbers are only allowed on a replica set member or mongos```
+```MongoError: Transaction numbers are only allowed on a replica set member or mongos.```
 
 This is because transactions are only possible on a replica set https://habr.com/ru/articles/417131/
 
