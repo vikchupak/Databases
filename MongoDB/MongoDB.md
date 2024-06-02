@@ -4,10 +4,9 @@ https://www.mongodb.com/docs/drivers/node/current/fundamentals/bson/undefined-va
 
 # ACID
 
-In MongoDB there are no ACID constrains like unique, required or even out-the-box transactions(which causes race condition problems).
+In MongoDB there are no ACID constrains like unique or even out-the-box transactions(which causes race condition problems).
 
 The only way to enforce uniqueness is to create unique index. But it is more like a workaround.\
-There is no ACID transactions out-the-box.
 
 By default there is no schema validation at MongoDB level.
 But we can still set the validation yourself. We can enforce required and non null, for example.
