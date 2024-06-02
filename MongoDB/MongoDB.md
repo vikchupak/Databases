@@ -2,6 +2,10 @@ By default, the MongoDB driver serializes undefined values as null values during
 We can set to ignore the undefined.\
 https://www.mongodb.com/docs/drivers/node/current/fundamentals/bson/undefined-values/#ignore-undefined-values
 
+# Normalization vs Denormalization
+
+https://dev.to/damcosset/mongodb-normalization-vs-denormalization
+
 # ACID
 
 In MongoDB there are no ACID constrains like unique or even out-the-box transactions(which causes race condition problems).
