@@ -28,10 +28,10 @@ https://www.cockroachlabs.com/docs/stable/unique
 ![Screenshot from 2024-06-08 21-33-23](https://github.com/VIK2395/Databases/assets/50545334/3ba9e089-ee2b-4ad9-ae3c-f30af76b62ff)
 
 __Mongo unique but allow null__\
-This is a sparse index. It still doesn't allows null fields dublicates.\
+This is a sparse index. It still doesn't allow null-fields dublicates.\
 https://www.mongodb.com/community/forums/t/cant-create-a-unique-index-that-ignores-nulls-in-mongodb/199145
 
-This is a partial index, and it really allows null fields dublicates.\
+This is a partial index, and it really allows null-fields dublicates.\
 https://stackoverflow.com/questions/35755628/unique-index-in-mongodb-3-2-ignoring-null-values
 
 # Transactions
