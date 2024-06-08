@@ -10,7 +10,7 @@ https://dev.to/damcosset/mongodb-normalization-vs-denormalization
 
 In MongoDB there are no ACID constrains like unique or even out-the-box transactions(which causes race condition problems).
 
-The only way to enforce uniqueness is to create unique index. But it is more like a workaround.\
+The only way to enforce uniqueness is to create unique index. But it is more like a workaround.
 
 By default there is no schema validation at MongoDB level.
 But we can still set the validation yourself. We can enforce required and non null, for example.
@@ -21,6 +21,14 @@ MongoDB Compass\
 https://www.mongodb.com/docs/compass/current/validation/
 
 ![Screenshot from 2024-06-02 00-08-31](https://github.com/VIK2395/Databases/assets/50545334/7a70d3be-2ce5-4eac-a760-993e73825834)
+
+__Sql unique but allow null__\
+https://www.cockroachlabs.com/docs/stable/unique
+
+![Screenshot from 2024-06-08 21-33-23](https://github.com/VIK2395/Databases/assets/50545334/3ba9e089-ee2b-4ad9-ae3c-f30af76b62ff)
+
+__Mongo unique but allow null__\
+https://www.mongodb.com/community/forums/t/cant-create-a-unique-index-that-ignores-nulls-in-mongodb/199145
 
 # Transactions
 
