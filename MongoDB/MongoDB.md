@@ -2,6 +2,8 @@ By default, the MongoDB driver serializes undefined values as null values during
 We can set to ignore the undefined.\
 https://www.mongodb.com/docs/drivers/node/current/fundamentals/bson/undefined-values/#ignore-undefined-values
 
+![Screenshot from 2024-06-12 11-06-05](https://github.com/VIK2395/Databases/assets/50545334/a786825e-f35a-4294-92fd-93eaa6ae59a8)
+
 # Normalization vs Denormalization
 
 https://dev.to/damcosset/mongodb-normalization-vs-denormalization
@@ -13,7 +15,7 @@ In MongoDB there are no ACID constrains like unique or even out-the-box transact
 The only way to enforce uniqueness is to create unique index. But it is more like a workaround.
 
 By default there is no schema validation at MongoDB level.
-But we can still set the validation yourself. We can enforce required and non null, for example.
+But we can still set the validation yourself. We can enforce required and non-null, for example.
 
 MongoDB\
 https://www.mongodb.com/docs/manual/core/schema-validation/ \
@@ -35,6 +37,36 @@ https://stackoverflow.com/questions/17125089/mongodb-unique-sparse-index
 
 This is a partial index, and it really allows null-fields dublicates.\
 https://stackoverflow.com/questions/35755628/unique-index-in-mongodb-3-2-ignoring-null-values
+
+So, to allow multiple null, but enforce unique non-empty string, we can use partial index with validation:
+
+```javascript
+BaseInfoSchema.index({ correlationId: 1 }, {
+  unique: true,
+  partialFilterExpression: {
+    correlationId: { $type: 'string' },
+  },
+});
+```
+https://www.mongodb.com/docs/manual/core/schema-validation/specify-json-schema/json-schema-tips/ \
+https://github.com/Automattic/mongoose/issues/934
+```javascript
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    properties: {
+      vin: {
+        bsonType: [
+          'string',
+          'null'
+        ],
+        pattern: '\\S+',
+        description: 'must be a non-empty string'
+      }
+    }
+  }
+}
+```
 
 # Transactions
 
