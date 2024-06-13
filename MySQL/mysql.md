@@ -4,7 +4,7 @@ cell => field
 
 # Normalization
 
-__There are 6 NF, all other NF are subsets of these 6 NF.__
+__There are 6 NFs, all other NFs are subsets of these 6 NFs.__
 
 https://www.geeksforgeeks.org/types-of-normal-forms-in-dbms/ \
 https://en.wikipedia.org/wiki/Database_normalization \
