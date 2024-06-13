@@ -27,8 +27,12 @@ Enchanced 3NF | Boyce-Codd Normal Form (BCNF).
 __Fourth normal form (4NF):__\
 No multi-valued (->>) dependency.
 
+Essential tuple normal form (ETNF)
+
 __Fifth normal form (5NF):__\
 No join dependency.
+
+Domain-key normal form (DKNF)
 
 __Sixth normal form (6NF):__\
 Is not used in real systems.
