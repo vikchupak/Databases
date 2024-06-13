@@ -21,7 +21,10 @@ No partial dependence. When a column completely depends on PK.\
 Partial dependence. When a column depends on one part of a composite key, but not on the whole key.
 
 __Third Normal Form (3NF):__\
-No transitive (functional ->) dependence. When a column depends more on another column rather than PK.
+Functional Dependency is a direct relationship between two attributes (e.g., A -> B).\
+Transitive Dependency is indirect relationship involving a third attribute (e.g., A -> B and B -> C, leading to A -> C).
+
+No transitive dependence. When a column depends more on another column rather than PK.
 
 Elementary key normal form (EKNF) falls strictly between 3NF and BCNF.
 
