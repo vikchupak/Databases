@@ -8,7 +8,8 @@ __There are 6 NFs, all other NFs are subsets of these 6 NFs.__
 
 https://www.geeksforgeeks.org/types-of-normal-forms-in-dbms/ \
 https://en.wikipedia.org/wiki/Database_normalization \
-https://www.javatpoint.com/dbms-normalization
+https://www.javatpoint.com/dbms-normalization \
+https://www.youtube.com/watch?v=zqQxWdTpSIA
 
 __Unnormalized Form or Zero Normal Form (UNF or 0NF):__
 
