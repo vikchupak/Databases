@@ -23,7 +23,7 @@ No transitive (functional ->) dependence. When a column depends more on another 
 Enchanced 3NF | Boyce-Codd Normal Form (BCNF). 
 
 __Fourth normal form (4NF):__\
-No multi-valued dependency.
+No multi-valued (->>) dependency.
 
 __Fifth normal form (5NF):__\
 No join dependency.
