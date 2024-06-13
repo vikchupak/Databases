@@ -10,7 +10,7 @@ https://www.geeksforgeeks.org/types-of-normal-forms-in-dbms/ \
 https://en.wikipedia.org/wiki/Database_normalization \
 https://www.javatpoint.com/dbms-normalization
 
-__Unnormalized form (UNF):__
+__Unnormalized Form or Zero Normal Form (UNF or 0NF):__
 
 __First Normal Form (1NF):__\
 Each field/cell contains a single/atomic value. A field/cell must not contain a set of values or a nested record.
