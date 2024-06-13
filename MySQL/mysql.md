@@ -18,7 +18,7 @@ No partial dependence. When a column completely depends on PK.\
 Partial dependence. When a column depends on one part of a composite key, but not on the whole key.
 
 __Third Normal Form (3NF):__\
-No transitive dependence. When a column depends more on another column rather than PK.
+No transitive (functional ->) dependence. When a column depends more on another column rather than PK.
 
 Enchanced 3NF | Boyce-Codd Normal Form (BCNF). 
 
