@@ -20,6 +20,8 @@ Partial dependence. When a column depends on one part of a composite key, but no
 __Third Normal Form (3NF):__\
 No transitive (functional ->) dependence. When a column depends more on another column rather than PK.
 
+Elementary key normal form (EKNF) falls strictly between 3NF and BCNF.
+
 Enchanced 3NF | Boyce-Codd Normal Form (BCNF). 
 
 __Fourth normal form (4NF):__\
