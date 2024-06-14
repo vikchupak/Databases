@@ -27,7 +27,17 @@ EmployeeID -> EmployeeName (EmployeeID uniquely determines EmployeeName).
 
 Transitive Dependency is indirect relationship involving a third attribute (e.g., A -> B and B -> C, leading to A -> C).
 
-No transitive dependence. When a column depends more on another column rather than PK.
+No transitive dependence. When one column depends on another column through a third column.
+
+Example:
+
+![Screenshot from 2024-06-14 18-03-58](https://github.com/VIK2395/Databases/assets/50545334/2aa80d7e-578e-4efb-b042-562b39d4b65e)
+
+Table already in 1NF and 2NF.
+
+![Screenshot from 2024-06-14 18-06-02](https://github.com/VIK2395/Databases/assets/50545334/1a8fe7b7-f7ed-4d5c-96d4-8113811f85f3)
+
+![Screenshot from 2024-06-14 18-06-49](https://github.com/VIK2395/Databases/assets/50545334/50877538-9ac7-4700-ab47-f7d6caf0877c)
 
 Elementary key normal form (EKNF) falls strictly between 3NF and BCNF.
 
