@@ -1,6 +1,6 @@
 table => schema\
-row => entity, tuple, record\
 column => attribute\
+row => entity, tuple, record\
 cell => field, value
 
 # Normalization
