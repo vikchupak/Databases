@@ -62,6 +62,10 @@ https://www.youtube.com/watch?v=NNjUhvvwOrk&list=PLLGlmW7jT-nTr1ory9o2MgsOmmx2w8
 __Fourth normal form (4NF):__\
 No multi-valued (->>) dependency.
 
+![image](https://github.com/VIK2395/Databases/assets/50545334/f595d9ea-fbbf-428e-9291-7f6bdf87f0b3)
+
+![image](https://github.com/VIK2395/Databases/assets/50545334/9ea60a9d-0ab4-4373-86dc-9a00aef8e4ed)
+
 Essential tuple normal form (ETNF)
 
 __Fifth normal form (5NF):__\
