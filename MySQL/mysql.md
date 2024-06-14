@@ -1,5 +1,5 @@
 table => schema\
-row => tuple, entity\
+row => entity, tuple\
 column => attribute\
 cell => field, value
 
