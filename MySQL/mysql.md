@@ -42,7 +42,9 @@ Table already in 1NF and 2NF.
 
 __Elementary key normal form (EKNF) falls strictly between 3NF and BCNF.__
 
-A table does not contain any extraneous key attributes. An extraneous key attribute is an attribute that can be removed from a candidate key without affecting the uniqueness of the key.
+A table does not contain any extraneous key attributes. An extraneous key attribute is an attribute that can be removed from a candidate key without affecting the uniqueness of the key.\
+https://en.wikipedia.org/wiki/Elementary_key_normal_form#:~:text=Elementary%20key%20normal%20form%20(EKNF,the%20overlapping%20column(s) \
+https://www.youtube.com/watch?v=mAUe1KEylak
 
 __Enchanced 3NF | Boyce-Codd Normal Form (BCNF).__
 
