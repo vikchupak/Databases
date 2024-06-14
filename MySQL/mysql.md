@@ -44,7 +44,7 @@ Elementary key normal form (EKNF) falls strictly between 3NF and BCNF.
 
 __Enchanced 3NF | Boyce-Codd Normal Form (BCNF).__
 
-For every functional dependency A->B, A must be a superkey.
+For every functional dependency A->B, A must be a superkey (or simply speaking a candicate key).
 
 ![Screenshot from 2024-06-14 19-02-06](https://github.com/VIK2395/Databases/assets/50545334/81b4aaa9-ffd3-4e14-8d32-05b517d9f6f0)
 
