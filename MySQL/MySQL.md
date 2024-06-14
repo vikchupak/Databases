@@ -77,5 +77,5 @@ No join dependency.
 
 __Domain-key normal form (DKNF)__ => skip
 
-__Sixth normal form (6NF):__ => skip
+__Sixth normal form (6NF):__ => skip\
 Is not used in real systems.
