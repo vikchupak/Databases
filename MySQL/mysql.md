@@ -1,7 +1,7 @@
 table => schema\
 row => tuple, entity\
 column => attribute\
-cell => field
+cell => field, value
 
 # Normalization
 
