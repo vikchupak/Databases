@@ -67,7 +67,10 @@ No multi-valued (->>) dependency.
 
 ![image](https://github.com/VIK2395/Databases/assets/50545334/9ea60a9d-0ab4-4373-86dc-9a00aef8e4ed)
 
-Essential tuple normal form (ETNF)
+__Essential tuple normal form (ETNF)__\
+No Elementary Transitive Dependency.
+
+An elementary transitive dependency is a specific type of transitive dependency where a non-prime attribute depends on a candidate key, and the intermediate attribute on which it depends is not a candidate key.
 
 __Fifth normal form (5NF):__\
 No join dependency.
