@@ -41,7 +41,7 @@ Table already in 1NF and 2NF.
 
 ![Screenshot from 2024-06-14 18-06-49](https://github.com/VIK2395/Databases/assets/50545334/50877538-9ac7-4700-ab47-f7d6caf0877c)
 
-__Elementary key normal form (EKNF) falls strictly between 3NF and BCNF.__
+__Elementary key normal form (EKNF) falls strictly between 3NF and BCNF.__ => skip
 
 A table does not contain any extraneous key attributes. An extraneous key attribute is an attribute that can be removed from a candidate key without affecting the uniqueness of the key.\
 https://en.wikipedia.org/wiki/Elementary_key_normal_form#:~:text=Elementary%20key%20normal%20form%20(EKNF,the%20overlapping%20column(s) \
@@ -67,7 +67,7 @@ No multi-valued (->>) dependency.
 
 ![image](https://github.com/VIK2395/Databases/assets/50545334/9ea60a9d-0ab4-4373-86dc-9a00aef8e4ed)
 
-__Essential tuple normal form (ETNF)__\
+__Essential tuple normal form (ETNF)__ => skip\
 No Elementary Transitive Dependency.
 
 An elementary transitive dependency is a specific type of transitive dependency where a non-prime attribute depends on a candidate key, and the intermediate attribute on which it depends is not a candidate key.
@@ -75,7 +75,7 @@ An elementary transitive dependency is a specific type of transitive dependency 
 __Fifth normal form (5NF):__\
 No join dependency.
 
-Domain-key normal form (DKNF)
+__Domain-key normal form (DKNF)__ => skip
 
-__Sixth normal form (6NF):__\
+__Sixth normal form (6NF):__ => skip
 Is not used in real systems.
