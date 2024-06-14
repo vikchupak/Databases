@@ -40,7 +40,9 @@ Table already in 1NF and 2NF.
 
 ![Screenshot from 2024-06-14 18-06-49](https://github.com/VIK2395/Databases/assets/50545334/50877538-9ac7-4700-ab47-f7d6caf0877c)
 
-Elementary key normal form (EKNF) falls strictly between 3NF and BCNF.
+__Elementary key normal form (EKNF) falls strictly between 3NF and BCNF.__
+
+It does not contain any extraneous key attributes. An extraneous key attribute is an attribute that can be removed from a candidate key without affecting the uniqueness of the key.
 
 __Enchanced 3NF | Boyce-Codd Normal Form (BCNF).__
 
