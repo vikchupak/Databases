@@ -1,6 +1,7 @@
 # Transaction Models
 
-In chemistry, a base is the opposite of an acid. ACID vs BASE in chemistry.
+In chemistry, a base is the opposite of an acid. ACID vs BASE in chemistry.\
+Аббревиатуры BASE и ACID специально подбирались так, чтобы в английском языке они противопоставлялись друг другу, поскольку эти же слова обозначают химически противоположные термины «щелочь» и «кислота».
 
 Integrity - цілісність
 
