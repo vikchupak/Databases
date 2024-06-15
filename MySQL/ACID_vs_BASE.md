@@ -10,6 +10,10 @@ ACID
 - Atomicity (No intermediate state, the whole transaction succeeds or rollbacks)
 - Consistency (Transaction brings data from one consistent state to another one, e.g. constrains, data types, so on are always meet. __Also this means every read gets actual state/value/data__)
 - Isolation (Eliminate concurrency, race condition problems. Each transaction is executed in isolation from the others. Isolation Levels, Locking, Multiversioning)
+
+https://en.wikipedia.org/wiki/ACID
+![image](https://github.com/VIK2395/Databases/assets/50545334/9c2c2088-ce98-4b6d-a6a0-82861f19f7fd)
+
 - Durability (Once a transaction has been committed, it will remain committed even in the case of a system failure)
 
 BASE
