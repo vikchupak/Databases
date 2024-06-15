@@ -1,3 +1,8 @@
+In chemistry, a base is the opposite of an acid, which helps in remembering the acronym.
+ACID vs BASE in chemistry.
+
+Integrity - цілісність
+
 ACID
 
 - Atomicity (No intermediate state, the whole transaction succeeds or rollbacks)
@@ -5,4 +10,11 @@ ACID
 - Isolation (Eliminate concurrency, race condition problems. Each transaction is executed in isolation from the others. Isolation Levels, Locking, Multiversioning)
 - Durability (Once a transaction has been committed, it will remain committed even in the case of a system failure)
 
-Integrity - цілісність
+Distributed transactions
+
+BASE
+
+- Basically available (Reading and writing operations are available as much as possible sacrificing сonsistency)
+- Soft-state (Without consistency guarantees, after some amount of time, we only have some probability of knowing the state, since it might not yet have converged)
+- Eventually consistent (If we execute some writes and then the system functions long enough, we can know the state of the data; any further reads of that data item will return the same value)
+
