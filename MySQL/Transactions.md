@@ -7,7 +7,8 @@ https://dev.mysql.com/doc/refman/8.0/en/innodb-autocommit-commit-rollback.html
 About locks and isolation levels.\
 https://retool.com/blog/isolation-levels-and-locking-in-relational-databases
 
-https://www.youtube.com/watch?v=S3XbZzqPS3g&list=PLd5sTGXltJ-l9PKT2Bynhg0Ou2uESOJiH&index=17
+https://www.youtube.com/watch?v=S3XbZzqPS3g&list=PLd5sTGXltJ-l9PKT2Bynhg0Ou2uESOJiH&index=17 \
+https://www.youtube.com/watch?v=ER8oKX5myE0
 
 __Lock modes(types):__\
 https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html
