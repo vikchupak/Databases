@@ -17,6 +17,6 @@ Distributed transactions
 BASE
 
 - Basically available (Reading and writing operations are available as much as possible sacrificing сonsistency)
-- Soft-state (Without consistency guarantees, after some amount of time, we only have some probability of knowing the state, since it might not yet have converged)
-- Eventually consistent (If we execute some writes and then the system functions long enough, we can know the state of the data; any further reads of that data item will return the same value)
+- Soft-state (Without consistency guarantees, after some amount of time, we only have some probability of knowing the state, since it might not yet have converged. Данные могут находиться в промежуточных или временных состояниях)
+- Eventually consistent (If we execute some writes and then the system functions long enough, we can know the state of the data; any further reads of that data item will return the same value. Запись достигнет согласованности не сразу, а после завершения всех одновременных обновлений)
 
