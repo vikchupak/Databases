@@ -12,9 +12,9 @@ https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html
 - Shared lock (S);
 - Exclusive lock (X);
 - Intention shared lock (IS);
-- Intention exclusive lock (IX);
-.
-.
+- Intention exclusive lock (IX);\
+.\
+.\
 .
 
 __Isolation levels:__
