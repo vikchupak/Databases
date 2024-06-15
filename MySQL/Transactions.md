@@ -4,3 +4,6 @@ https://dev.mysql.com/doc/refman/8.0/en/innodb-autocommit-commit-rollback.html
 
 __Isolation levels:__\
 https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/
+
+__Lock modes(types):__\
+https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html
