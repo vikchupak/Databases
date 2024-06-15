@@ -23,4 +23,6 @@ CAP teorem for Distributed Systems (transactions)
 ![image](https://github.com/VIK2395/Databases/assets/50545334/355957a4-3f15-4619-8b66-64135c96ef19)
 ![image](https://github.com/VIK2395/Databases/assets/50545334/238440a5-7ccc-4d78-9ef0-0c0f2f108360)
 ![image](https://github.com/VIK2395/Databases/assets/50545334/5fba2816-8c1d-430b-965e-8f24a92c8368)
+![image](https://github.com/VIK2395/Databases/assets/50545334/e09b4716-3892-4267-affa-fb4b96a8077d)
+
 
