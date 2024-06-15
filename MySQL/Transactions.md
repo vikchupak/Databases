@@ -9,3 +9,8 @@ __Lock modes(types):__\
 https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html
 
 https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-model.html
+
+__Locking and isolation levels:__\
+https://retool.com/blog/isolation-levels-and-locking-in-relational-databases
+
+![image](https://github.com/VIK2395/Databases/assets/50545334/a3dd5b36-0859-43a6-85df-0b192854aac6)
