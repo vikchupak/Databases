@@ -7,3 +7,5 @@ https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/
 
 __Lock modes(types):__\
 https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html
+
+https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-model.html
