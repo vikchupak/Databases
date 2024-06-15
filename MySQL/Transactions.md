@@ -40,3 +40,7 @@ SQL standard defines four isolation levels:
 https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/ \
 https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-isolation-levels.html \
 https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-model.html
+
+__Two phase commit:__\
+https://en.wikipedia.org/wiki/ACID \
+https://www.geeksforgeeks.org/two-phase-locking-protocol/
