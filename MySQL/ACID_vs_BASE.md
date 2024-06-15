@@ -8,7 +8,7 @@ Integrity - цілісність
 ACID
 
 - Atomicity (No intermediate state, the whole transaction succeeds or rollbacks)
-- Consistency (Transaction brings data from one consistent state to another one, e.g. constrains, data types, so on are always meet. Also this means every read get actual value/data)
+- Consistency (Transaction brings data from one consistent state to another one, e.g. constrains, data types, so on are always meet. __Also this means every read gets actual state/value/data__)
 - Isolation (Eliminate concurrency, race condition problems. Each transaction is executed in isolation from the others. Isolation Levels, Locking, Multiversioning)
 - Durability (Once a transaction has been committed, it will remain committed even in the case of a system failure)
 
