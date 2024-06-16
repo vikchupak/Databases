@@ -25,7 +25,7 @@ __Third Normal Form (3NF):__\
 No transitive dependence.
 
 Functional Dependency is a direct relationship between two attributes (e.g., A -> B).\
-If attribute A functionally determines attribute B, it is denoted as A-> B.\
+If attribute A functionally __uniquely(one)__ determines attribute B, it is denoted as A-> B.\
 EmployeeID -> EmployeeName (EmployeeID uniquely determines EmployeeName).
 
 Transitive Dependency is indirect relationship involving a third attribute (e.g., A -> B and B -> C, leading to A -> C).\
@@ -61,7 +61,15 @@ https://www.youtube.com/watch?v=NNjUhvvwOrk&list=PLLGlmW7jT-nTr1ory9o2MgsOmmx2w8
 ![Screenshot from 2024-06-14 19-15-11](https://github.com/VIK2395/Databases/assets/50545334/622f7d7d-ad12-40d3-b3de-6eb80d46933f)
 
 __Fourth normal form (4NF):__\
-No multi-valued (->>) dependency.
+No multi-valued (->->) dependency.\
+Multi-valued dependency is a relationship between two attributes (e.g., A ->-> B).\
+If attribute A determines a set of attribute B values, it is denoted as A->-> B.
+
+A table has a multi-valued dependency, when:
+1. A->-> B and A->-> C; (at least 2 multi-valued dependencies exist)
+2. B and C are independent of each other;
+
+https://www.youtube.com/watch?v=OTCuykFHBeA
 
 ![image](https://github.com/VIK2395/Databases/assets/50545334/f595d9ea-fbbf-428e-9291-7f6bdf87f0b3)
 
