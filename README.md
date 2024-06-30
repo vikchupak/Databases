@@ -18,4 +18,6 @@ Capital.belongsTo(Country);
 In this case, the __capitals__ table should store the foreign key (contryId), and so to own the relationship.\
 This is how it works in Sequelize.
 
+![image](https://github.com/VIK2395/Databases/assets/50545334/a71c2a6c-3080-4d9f-97af-1a9ef731fbb2)
+
 ![image](https://github.com/VIK2395/Databases/assets/50545334/3cc30ad3-2e76-4c61-9f04-634042d7596c)
