@@ -14,6 +14,10 @@ https://www.youtube.com/watch?v=ZaFMM-vNlvc&t=387s
 
 https://www.youtube.com/watch?v=uEk07jXdKOo
 
+How to show temp tables:\
+https://dev.mysql.com/doc/refman/8.4/en/innodb-information-schema-temp-table-info.html \
+https://www.percona.com/blog/temporary-tables-in-mysql-never-ending-story/ 
+
 # Aggregate functions
 https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html
 
