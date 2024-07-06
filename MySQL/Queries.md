@@ -10,6 +10,8 @@ https://learnsql.com/blog/do-it-in-sql-recursive-tree-traversal/
 Aggregate functions:\
 https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html
 
+GROUP_CONCAT() https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php\
+
 Get first row in a group:
 - problem https://mariadb.com/kb/en/order-by-before-group-by/
 
