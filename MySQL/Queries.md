@@ -7,6 +7,11 @@ https://www.geeksforgeeks.org/sql-with-clause/
 # Recursive CTE
 https://learnsql.com/blog/do-it-in-sql-recursive-tree-traversal/
 
+# Temp table vs CTE
+https://www.youtube.com/watch?v=ZaFMM-vNlvc&t=387s
+
+![image](https://github.com/VIK2395/Databases/assets/50545334/191024de-5ffa-4dfa-91b4-8231d0477f69)
+
 # Aggregate functions
 https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html
 
