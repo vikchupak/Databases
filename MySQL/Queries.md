@@ -1,30 +1,35 @@
-CTE (Common Table Expression):\
+# CTE (Common Table Expression)
 https://learnsql.com/blog/what-is-with-clause-sql/ \
 https://www.geeksforgeeks.org/sql-with-clause/
 
 <img width="801" alt="With_SQL" src="https://github.com/VIK2395/Databases/assets/50545334/b30db5be-74cd-4733-9fe2-2b1fc9321236">
 
-Recursive CTE:\
+# Recursive CTE
 https://learnsql.com/blog/do-it-in-sql-recursive-tree-traversal/
 
-Aggregate functions:\
+# Aggregate functions
 https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html
 
 GROUP_CONCAT() https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php\
 
-Get first row in a group:
-- problem https://mariadb.com/kb/en/order-by-before-group-by/
+# Get first row in a group
+Problem https://mariadb.com/kb/en/order-by-before-group-by/
 
 https://learnsql.com/cookbook/how-to-select-the-first-row-in-each-group-by-group/ (read row_number vs rank)\
 https://www.geeksforgeeks.org/how-to-select-the-first-row-of-each-group-by-in-sql/
 
-LAG function (to get prev row value):\
+# LAG function (to get prev row value)
 https://www.scaler.com/topics/mysql-lag/
 
-SELF JOIN:\
+# SELF JOIN
 https://www.mysqltutorial.org/mysql-basics/mysql-self-join/
 
-How to transform flat sql data into hierarchical object structure:
+# JSON type
+
+<img width="960" alt="Json_in_mysql" src="https://github.com/VIK2395/Databases/assets/50545334/8d393326-d18f-48f3-bf5a-3cfe2f265cee">
+<img width="960" alt="db_jsons" src="https://github.com/VIK2395/Databases/assets/50545334/8e2b3173-c6eb-4d5c-bcd0-01fbb30e01ca">
+
+# How to transform flat sql data into hierarchical object structure
 
 1st approach: LEFT JOIN SQL Query. Simpler in terms of the number of queries executed, but may be less flexible if your data structures or relationships are more complex.
 
