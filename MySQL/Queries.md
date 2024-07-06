@@ -6,7 +6,8 @@ Recursive CTE:\
 https://learnsql.com/blog/do-it-in-sql-recursive-tree-traversal/
 
 Get first row in a group:\
-https://learnsql.com/cookbook/how-to-select-the-first-row-in-each-group-by-group/ (read row_number vs rank)
+https://learnsql.com/cookbook/how-to-select-the-first-row-in-each-group-by-group/ (read row_number vs rank)\
+https://www.geeksforgeeks.org/how-to-select-the-first-row-of-each-group-by-in-sql/
 
 
 LAG function (to get prev row value):\
