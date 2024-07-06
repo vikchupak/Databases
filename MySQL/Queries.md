@@ -7,7 +7,9 @@ https://www.geeksforgeeks.org/sql-with-clause/
 Recursive CTE:\
 https://learnsql.com/blog/do-it-in-sql-recursive-tree-traversal/
 
-Get first row in a group:\
+Get first row in a group:
+- problem https://mariadb.com/kb/en/order-by-before-group-by/
+
 https://learnsql.com/cookbook/how-to-select-the-first-row-in-each-group-by-group/ (read row_number vs rank)\
 https://www.geeksforgeeks.org/how-to-select-the-first-row-of-each-group-by-in-sql/
 
