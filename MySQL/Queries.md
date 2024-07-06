@@ -187,16 +187,4 @@ function getReviewsWithReplies(callback) {
     });
   });
 }
-
-// Call the function and log the results
-getReviewsWithReplies((error, reviews) => {
-  if (error) {
-    console.error('Error fetching reviews with replies:', error);
-  } else {
-    console.log(JSON.stringify(reviews, null, 2));
-  }
-
-  // Close the database connection
-  connection.end();
-});
 ```
