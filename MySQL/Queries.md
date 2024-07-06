@@ -17,3 +17,5 @@ https://www.scaler.com/topics/mysql-lag/
 
 SELF JOIN:\
 https://www.mysqltutorial.org/mysql-basics/mysql-self-join/
+
+How ORMs transforms flat sql data into hierarchical object structure:\
