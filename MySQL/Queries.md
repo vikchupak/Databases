@@ -60,6 +60,7 @@ SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
 FROM Customers A, Customers B
 WHERE A.City = B.City AND A.CustomerID <> B.CustomerID
 ORDER BY A.City;
+# Without where clause results to cross join
 ```
 ```mysql
 # Expicit join
