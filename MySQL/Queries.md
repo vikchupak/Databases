@@ -265,3 +265,197 @@ function getReviewsWithReplies(callback) {
   });
 }
 ```
+
+# Articles comment-reply task
+
+```javascript
+const mysql = require('mysql');
+
+// Create a connection to the database
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'username',
+    password: 'password',
+    database: 'database_name'
+});
+
+connection.connect();
+
+// Recursive query to fetch comments and replies
+const query = `
+WITH RECURSIVE CommentHierarchy AS (
+    SELECT
+        id,
+        article_id,
+        parent_comment_id,
+        user_id,
+        content,
+        created_at,
+        0 AS level
+    FROM comments
+    WHERE article_id = ? AND parent_comment_id IS NULL
+
+    UNION ALL
+
+    SELECT
+        c.id,
+        c.article_id,
+        c.parent_comment_id,
+        c.user_id,
+        c.content,
+        c.created_at,
+        ch.level + 1
+    FROM comments c
+    INNER JOIN CommentHierarchy ch ON c.parent_comment_id = ch.id
+)
+SELECT
+    id,
+    article_id,
+    parent_comment_id,
+    user_id,
+    content,
+    created_at,
+    level
+FROM CommentHierarchy
+ORDER BY level, created_at;
+`;
+
+const articleId = 1;
+
+connection.query(query, [articleId], (error, results) => {
+    if (error) {
+        console.error('Error executing query:', error);
+        connection.end();
+        return;
+    }
+
+    const comments = results;
+
+    // Function to build the hierarchical structure
+    function buildCommentTree(comments) {
+        const commentDict = {};
+        comments.forEach(comment => {
+            comment.replies = [];
+            commentDict[comment.id] = comment;
+        });
+
+        const commentTree = [];
+        comments.forEach(comment => {
+            if (comment.parent_comment_id === null) {
+                commentTree.push(comment);
+            } else {
+                commentDict[comment.parent_comment_id].replies.push(comment);
+            }
+        });
+
+        return commentTree;
+    }
+
+    // Build the hierarchical comment tree
+    const commentTree = buildCommentTree(comments);
+
+    // Print the hierarchical structure
+    console.log(JSON.stringify(commentTree, null, 4));
+
+    connection.end();
+});
+```
+```javascript
+[
+    {
+        "id": 1,
+        "article_id": 1,
+        "parent_comment_id": null,
+        "user_id": 1,
+        "content": "This is a top-level comment",
+        "created_at": "2024-06-30T12:34:56.000Z",
+        "level": 0,
+        "replies": [
+            {
+                "id": 2,
+                "article_id": 1,
+                "parent_comment_id": 1,
+                "user_id": 2,
+                "content": "This is a reply to the top-level comment",
+                "created_at": "2024-06-30T12:35:56.000Z",
+                "level": 1,
+                "replies": [
+                    {
+                        "id": 4,
+                        "article_id": 1,
+                        "parent_comment_id": 2,
+                        "user_id": 3,
+                        "content": "This is a reply to the reply",
+                        "created_at": "2024-06-30T12:36:56.000Z",
+                        "level": 2,
+                        "replies": []
+                    },
+                    {
+                        "id": 5,
+                        "article_id": 1,
+                        "parent_comment_id": 2,
+                        "user_id": 4,
+                        "content": "This is another reply to the reply",
+                        "created_at": "2024-06-30T12:37:56.000Z",
+                        "level": 2,
+                        "replies": []
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "article_id": 1,
+                "parent_comment_id": 1,
+                "user_id": 3,
+                "content": "This is another reply to the top-level comment",
+                "created_at": "2024-06-30T12:36:00.000Z",
+                "level": 1,
+                "replies": [
+                    {
+                        "id": 6,
+                        "article_id": 1,
+                        "parent_comment_id": 3,
+                        "user_id": 5,
+                        "content": "This is a reply to another reply",
+                        "created_at": "2024-06-30T12:38:00.000Z",
+                        "level": 2,
+                        "replies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "article_id": 1,
+        "parent_comment_id": null,
+        "user_id": 2,
+        "content": "This is another top-level comment",
+        "created_at": "2024-06-30T12:38:56.000Z",
+        "level": 0,
+        "replies": [
+            {
+                "id": 8,
+                "article_id": 1,
+                "parent_comment_id": 7,
+                "user_id": 6,
+                "content": "This is a reply to another top-level comment",
+                "created_at": "2024-06-30T12:39:56.000Z",
+                "level": 1,
+                "replies": []
+            }
+        ]
+    }
+]
+```
+```
+Top-Level Comment 1
+    ├── Reply 1 (User 2)
+    │    ├── Reply 1.1 (User 3)
+    │    └── Reply 1.2 (User 4)
+    └── Reply 2 (User 3)
+         └── Reply 2.1 (User 5)
+
+Top-Level Comment 2
+    └── Reply 3 (User 6)
+```
