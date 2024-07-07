@@ -32,6 +32,9 @@ SQL standard defines four isolation levels that prevents the phenomena above:
 - Repeatable Read;
 - Serializable;
 
+In the following table, an "X" marks each phenomenon that can occur.
+![image](https://github.com/VIK2395/Databases/assets/50545334/4e16acaf-fa3f-4d59-ae25-e550e702ee8a)
+
 ![image](https://github.com/VIK2395/Databases/assets/50545334/a3dd5b36-0859-43a6-85df-0b192854aac6)
 
 https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/ \
