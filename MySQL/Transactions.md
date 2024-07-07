@@ -29,7 +29,7 @@ __Isolation levels:__
 
 ![image](https://github.com/VIK2395/Databases/assets/50545334/2cbe070b-975d-4815-bd2c-7373ff8bc81a)
 
-- Dirty Reads;
+- Dirty Reads (the cuncurrent transaction reads data not waiting for another transaction to commit);
 - Non Repeatable read;
 - Phantom Read;
 
