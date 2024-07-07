@@ -25,8 +25,7 @@ https://en.wikipedia.org/wiki/Isolation_(database_systems)
 
 __Isolation levels:__
 
-![image](https://github.com/VIK2395/Databases/assets/50545334/2cbe070b-975d-4815-bd2c-7373ff8bc81a)
-
+![image](https://github.com/VIK2395/Databases/assets/50545334/24a03409-3204-4f67-8f5a-0369c2ed4262)
 SQL standard defines four isolation levels that prevents the phenomena above:
 - Read Uncommitted;
 - Read Committed;
