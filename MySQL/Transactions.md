@@ -25,15 +25,20 @@ https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html
 .\
 .
 
+__Read Phenomena:__
+
+https://learn.microsoft.com/en-us/sql/odbc/reference/develop-app/transaction-isolation-levels?view=sql-server-ver16 \
+https://en.wikipedia.org/wiki/Isolation_(database_systems)
+
+- Dirty Reads;
+- Non Repeatable read;
+- Phantom Read;
+
 __Isolation levels:__
 
 ![image](https://github.com/VIK2395/Databases/assets/50545334/2cbe070b-975d-4815-bd2c-7373ff8bc81a)
 
-- Dirty Reads (the cuncurrent transaction reads data not waiting for another transaction to commit);
-- Non Repeatable read;
-- Phantom Read;
-
-SQL standard defines four isolation levels:
+SQL standard defines four isolation levels that prevents the phenomena above:
 - Read Uncommitted;
 - Read Committed;
 - Repeatable Read;
