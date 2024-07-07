@@ -77,6 +77,20 @@ https://www.w3schools.com/mysql/mysql_view.asp
 
 ![image](https://github.com/VIK2395/Databases/assets/50545334/7f7b4f71-e24b-4e18-baad-244af67b64f5)
 
+# Stored procedures
+https://dev.mysql.com/doc/refman/8.4/en/create-procedure.html \
+https://www.youtube.com/watch?v=oagHZwY9JJY
+
+__Can have parameters, but doesn't return a value__
+
+# Functions
+https://dev.mysql.com/doc/refman/8.4/en/create-procedure.html \
+https://www.w3schools.com/mysql/mysql_ref_functions.asp
+
+- CURRENT_TIMESTAMP()
+
+__Can have parameters, and returns a value__
+
 # JSON type
 
 <img width="960" alt="Json_in_mysql" src="https://github.com/VIK2395/Databases/assets/50545334/8d393326-d18f-48f3-bf5a-3cfe2f265cee">
