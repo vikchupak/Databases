@@ -51,6 +51,13 @@ Exclusive lock -> Prevents others from reading and updating the data. Also calle
 
 Intensive locks -> more granularity locks that allow coexistence of table locks and __row locks__
 
+![image](https://github.com/VIK2395/Databases/assets/50545334/5f1d69c5-ece5-4f61-8954-78605598902a)
+![image](https://github.com/VIK2395/Databases/assets/50545334/53094fe4-117a-4cf9-864e-a853d26e8fac)
+
+
+https://www.geeksforgeeks.org/levels-of-locking-in-dbms/ \
+https://www.sqlpassion.at/archive/2016/05/16/why-do-we-need-intent-locks-in-sql-server/
+
 - Shared lock (S);
 - Exclusive lock (X);
 - Intention shared lock (IS);
