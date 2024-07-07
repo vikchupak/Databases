@@ -36,12 +36,13 @@ https://dev.mysql.com/doc/refman/8.4/en/window-functions-usage.html
 
 __Winfow functions (Partition by) do not collapse rows__
 
+![image](https://github.com/VIK2395/Databases/assets/50545334/ee73f0a3-a1ce-49ac-a834-31fea001c294)
+![image](https://github.com/VIK2395/Databases/assets/50545334/c056ba83-116e-4f89-8af5-dc4021c72c99)
+
 https://www.youtube.com/watch?v=Ww71knvhQ-s \
 https://www.youtube.com/watch?v=zAmJPdZu8Rg \
 https://www.devart.com/dbforge/mysql/studio/mysql-window-functions.html \
 https://www.youtube.com/watch?v=7NBt0V8ebGk
-
-![image](https://github.com/VIK2395/Databases/assets/50545334/ee73f0a3-a1ce-49ac-a834-31fea001c294)
 
 - LAG() (to get prev row value)
 https://www.scaler.com/topics/mysql-lag/
