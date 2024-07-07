@@ -50,9 +50,9 @@ https://www.scaler.com/topics/mysql-lag/
 # SELF JOIN
 https://www.mysqltutorial.org/mysql-basics/mysql-self-join/
 
-# Implicit (inner) join vs expicit (inner) join
+# Implicit (inner) join vs explicit (inner) join
 
-Implicit (inner) join can always be rewritten with explicit expicit (inner) join.
+Implicit (inner) join can always be rewritten with explicit (inner) join.
 
 ```mysql
 # Implicit join
@@ -63,7 +63,7 @@ ORDER BY A.City;
 # Without where clause results to cross join
 ```
 ```mysql
-# Expicit join
+# Explicit join
 SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
 FROM Customers A
 JOIN Customers B ON A.City = B.City AND A.CustomerID <> B.CustomerID
