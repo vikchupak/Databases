@@ -42,7 +42,7 @@ https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/ \
 __Lock modes(types):__\
 https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html
 
-Shared lock -> Prevents others from updating the data. Shared lock is also called read lock. It allows simultaneous8 read by multiple transactions. When read lock is held, then not write can occur. Write will await until read lock is released. Read lock can be owned/acquired by multiple transactions at a time(this is why it is called Shared).
+Shared lock -> Prevents others from updating the data. Shared lock is also called read lock. It allows simultaneous read by multiple transactions. When read lock is held, then not write can occur. Write will await until read lock is released. Read lock can be owned/acquired by multiple transactions at a time(this is why it is called Shared).
 
 Exclusive lock -> Prevents others from reading and updating the data. Also called write lock. Read and write will await until the write lock is released. Write lock can be owned/acquired by only one transaction at a time(this is why it is called Exclusive).
 
