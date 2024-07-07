@@ -42,8 +42,14 @@ https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/
 An isolation level represents a particular locking strategy employed in the database system to improve data consistency. The higher the isolation level, the more complex the locking strategy behind it. Type of locks used described below. \
 https://docs.actian.com/zen/v14/index.html#page/adonet/isolation.htm
 
-__Lock modes(types):__\
-https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html
+__Lock modes(types):__
+- Shared lock (S);
+- Exclusive lock (X);
+- Intention shared lock (IS);
+- Intention exclusive lock (IX);\
+.\
+.\
+.
 
 https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html \
 https://mariadb.com/kb/en/innodb-lock-modes/
@@ -57,18 +63,8 @@ Intensive locks -> more granularity locks that allow coexistence of table locks 
 ![image](https://github.com/VIK2395/Databases/assets/50545334/5f1d69c5-ece5-4f61-8954-78605598902a)
 ![image](https://github.com/VIK2395/Databases/assets/50545334/53094fe4-117a-4cf9-864e-a853d26e8fac)
 
-
 https://www.geeksforgeeks.org/levels-of-locking-in-dbms/ \
-https://www.sqlpassion.at/archive/2016/05/16/why-do-we-need-intent-locks-in-sql-server/
-
-- Shared lock (S);
-- Exclusive lock (X);
-- Intention shared lock (IS);
-- Intention exclusive lock (IX);\
-.\
-.\
-.
-
+https://www.sqlpassion.at/archive/2016/05/16/why-do-we-need-intent-locks-in-sql-server/ \
 https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-isolation-levels.html \
 https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-model.html
 
