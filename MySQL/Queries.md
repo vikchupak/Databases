@@ -50,6 +50,25 @@ https://www.scaler.com/topics/mysql-lag/
 # SELF JOIN
 https://www.mysqltutorial.org/mysql-basics/mysql-self-join/
 
+# Implicit (inner) join vs expicit (inner) join
+
+Implicit (inner) join can always be rewritten with explicit expicit (inner) join.
+
+```mysql
+# Implicit join
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.City = B.City AND A.CustomerID <> B.CustomerID
+ORDER BY A.City;
+```
+```mysql
+# Expicit join
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A
+JOIN Customers B ON A.City = B.City AND A.CustomerID <> B.CustomerID
+ORDER BY A.City;
+```
+
 # JSON type
 
 <img width="960" alt="Json_in_mysql" src="https://github.com/VIK2395/Databases/assets/50545334/8d393326-d18f-48f3-bf5a-3cfe2f265cee">
