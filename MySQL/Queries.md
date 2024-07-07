@@ -70,6 +70,13 @@ JOIN Customers B ON A.City = B.City AND A.CustomerID <> B.CustomerID
 ORDER BY A.City;
 ```
 
+# Views
+
+https://www.youtube.com/watch?v=wciubfRhvtM \
+https://www.w3schools.com/mysql/mysql_view.asp
+
+![image](https://github.com/VIK2395/Databases/assets/50545334/7f7b4f71-e24b-4e18-baad-244af67b64f5)
+
 # JSON type
 
 <img width="960" alt="Json_in_mysql" src="https://github.com/VIK2395/Databases/assets/50545334/8d393326-d18f-48f3-bf5a-3cfe2f265cee">
