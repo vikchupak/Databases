@@ -37,7 +37,10 @@ In the following table, an "X" marks each phenomenon that can occur.
 
 ![image](https://github.com/VIK2395/Databases/assets/50545334/a3dd5b36-0859-43a6-85df-0b192854aac6)
 
-https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/ \
+https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/
+
+An isolation level represents a particular locking strategy employed in the database system to improve data consistency. The higher the isolation level, the more complex the locking strategy behind it. Type of locks used described below. \
+https://docs.actian.com/zen/v14/index.html#page/adonet/isolation.htm
 
 __Lock modes(types):__\
 https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html
