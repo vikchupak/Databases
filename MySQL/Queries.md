@@ -57,7 +57,7 @@ https://www.scaler.com/topics/mysql-lag/
 https://www.mysqltutorial.org/mysql-basics/mysql-self-join/
 
 # Implicit (inner) join vs explicit (inner) join
-
+In the image below, it is not (implicit) join, but nested select
 <img width="773" alt="2_tables" src="https://github.com/VIK2395/Databases/assets/50545334/1bae99a9-c544-4d7e-b503-2f40bdcd1a66">
 
 Implicit (inner) join can always be rewritten with explicit (inner) join.
