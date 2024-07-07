@@ -17,6 +17,9 @@ https://www.youtube.com/watch?v=ER8oKX5myE0
 __Lock modes(types):__\
 https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html
 
+Shared lock -> Prevents others from updating the data.
+Exclusive lock -> Prevents others from reading or updating the data.
+
 - Shared lock (S);
 - Exclusive lock (X);
 - Intention shared lock (IS);
