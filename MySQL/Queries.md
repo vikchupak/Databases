@@ -91,6 +91,9 @@ https://www.w3schools.com/mysql/mysql_ref_functions.asp
 
 __Can have parameters, and returns a value__
 
+# Triggers
+https://www.youtube.com/watch?v=jVbj72YO-8s
+
 # JSON type
 
 <img width="960" alt="Json_in_mysql" src="https://github.com/VIK2395/Databases/assets/50545334/8d393326-d18f-48f3-bf5a-3cfe2f265cee">
