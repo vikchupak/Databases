@@ -1,3 +1,9 @@
+# Usefull courses
+https://www.youtube.com/watch?v=7S_tz1z_5bA \
+https://www.youtube.com/watch?v=oPV2sjMG53U&list=PLZPZq0r_RZOMskz6MdsMOgxzheIyjo-BZ \
+https://www.youtube.com/watch?v=Ww71knvhQ-s&list=RDCMUCnz-ZXXER4jOvuED5trXfEA&index=1 \
+https://www.youtube.com/watch?v=rGx1QNdYzvs&list=PLUaB-1hjhk8FE_XZ87vPPSfHqb6OcM0cF
+
 # CTE (Common Table Expression)
 https://learnsql.com/blog/what-is-with-clause-sql/ \
 https://www.geeksforgeeks.org/sql-with-clause/
