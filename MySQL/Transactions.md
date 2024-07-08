@@ -42,6 +42,22 @@ https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/
 An isolation level represents a particular locking strategy employed in the database system to improve data consistency. The higher the isolation level, the more complex the locking strategy behind it. Type of locks used described below. \
 https://docs.actian.com/zen/v14/index.html#page/adonet/isolation.htm
 
+```mysql
+# Global scope
+SET GLOBAL TRANSACTION ISOLATION LEVEL <READ UNCOMMITED | READ COMMITED | REPEATABLE READ | SERIALIZABLE>;
+# Session scope
+SET SESSION TRANSACTION ISOLATION LEVEL <READ UNCOMMITED | READ COMMITED | REPEATABLE READ | SERIALIZABLE>;
+# Next transaction only
+SET SESSION TRANSACTION ISOLATION LEVEL <READ UNCOMMITED | READ COMMITED | REPEATABLE READ | SERIALIZABLE>;
+
+# Global scope
+SELECT @@GLOBAL.transaction_isolation;
+# Session scope
+SELECT @@SESSION.transaction_isolation;
+# Next transaction only
+SELECT @@transaction_isolation;
+```
+
 __Lock modes(types):__
 - Shared lock (S);
 - Exclusive lock (X);
@@ -78,14 +94,19 @@ https://dev.mysql.com/doc/refman/8.4/en/innodb-parameters.html#sysvar_innodb_loc
 https://www.baeldung.com/sql/mysql-lock-wait-timeout-error#testing-scenarios
 
 ```mysql
-# System var, in seconds
-SELECT @@innodb_lock_wait_timeout;
-
-# Session var, in seconds
-SELECT @@SESSION.innodb_lock_wait_timeout;
-
-# Set our timeout to 10 seconds
+# Global scope, in seconds
+SET @@GLOBAL.innodb_lock_wait_timeout = 10;
+# Session scope
 SET @@SESSION.innodb_lock_wait_timeout = 10;
+# Next transaction only
+SET @@innodb_lock_wait_timeout = 10;
+
+# Global scope
+SELECT @@GLOBAL.innodb_lock_wait_timeout;
+# Session scope
+SELECT @@SESSION.innodb_lock_wait_timeout;
+# Next transaction only
+SELECT @@innodb_lock_wait_timeout;
 ```
 
 __Two phase commit:__\
