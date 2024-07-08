@@ -16,8 +16,8 @@ https://www.youtube.com/watch?v=ER8oKX5myE0
 
 __Read Phenomena:__
 
-https://learn.microsoft.com/en-us/sql/odbc/reference/develop-app/transaction-isolation-levels?view=sql-server-ver16 \
-https://en.wikipedia.org/wiki/Isolation_(database_systems)
+https://en.wikipedia.org/wiki/Isolation_(database_systems) \
+https://learn.microsoft.com/en-us/sql/odbc/reference/develop-app/transaction-isolation-levels?view=sql-server-ver16
 
 - Dirty Reads;
 - Non Repeatable read;
@@ -31,6 +31,9 @@ SQL standard defines four isolation levels that prevents the phenomena above:
 - Read Committed;
 - Repeatable Read;
 - Serializable;
+
+https://www.baeldung.com/sql/mysql-lock-wait-timeout-error#isolation-level
+![image](https://github.com/VIK2395/Databases/assets/50545334/5c074878-1b25-4b9c-ae2f-c8796f341373)
 
 In the following table, an "X" marks each phenomenon that can occur.
 ![image](https://github.com/VIK2395/Databases/assets/50545334/4e16acaf-fa3f-4d59-ae25-e550e702ee8a)
@@ -67,6 +70,21 @@ https://www.geeksforgeeks.org/levels-of-locking-in-dbms/ \
 https://www.sqlpassion.at/archive/2016/05/16/why-do-we-need-intent-locks-in-sql-server/ \
 https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-isolation-levels.html \
 https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-model.html
+
+# LOCK WAIT TIMEOUT
+https://dev.mysql.com/doc/refman/8.4/en/innodb-parameters.html#sysvar_innodb_lock_wait_timeout
+https://www.baeldung.com/sql/mysql-lock-wait-timeout-error#testing-scenarios
+
+```mysql
+# System var, in seconds
+SELECT @@innodb_lock_wait_timeout;
+
+# Session var, in seconds
+SELECT @@SESSION.innodb_lock_wait_timeout;
+
+# Set our timeout to 10 seconds
+SET @@SESSION.innodb_lock_wait_timeout = 10;
+```
 
 __Two phase commit:__\
 https://en.wikipedia.org/wiki/ACID \
