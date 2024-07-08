@@ -5,11 +5,6 @@ https://dev.mysql.com/doc/refman/8.0/en/innodb-autocommit-commit-rollback.html
 
 <img width="653" alt="01" src="https://github.com/VIK2395/Databases/assets/50545334/760b95c3-5f4d-4258-ac77-d7a150247482">
 
-# About dead locks
-https://www.youtube.com/watch?v=y5h3mI9OvOI (30:50)
-
-When dead lock happens, the both transactions get rollback.
-
 # Locks and isolation levels
 https://retool.com/blog/isolation-levels-and-locking-in-relational-databases
 
@@ -72,6 +67,11 @@ https://www.geeksforgeeks.org/levels-of-locking-in-dbms/ \
 https://www.sqlpassion.at/archive/2016/05/16/why-do-we-need-intent-locks-in-sql-server/ \
 https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-isolation-levels.html \
 https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-model.html
+
+# About dead locks
+https://www.youtube.com/watch?v=y5h3mI9OvOI (30:50)
+
+When dead lock happens, the both transactions get rollback.
 
 # LOCK WAIT TIMEOUT
 https://dev.mysql.com/doc/refman/8.4/en/innodb-parameters.html#sysvar_innodb_lock_wait_timeout
