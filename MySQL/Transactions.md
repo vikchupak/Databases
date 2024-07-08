@@ -46,7 +46,7 @@ SQL standard defines four isolation levels that prevents the phenomena above:
 - Serializable;
 
 https://www.baeldung.com/sql/mysql-lock-wait-timeout-error#isolation-level
-![image](https://github.com/VIK2395/Databases/assets/50545334/f5c07bc5-76c7-46b7-9ea8-204e3365ce0e)
+![image](https://github.com/VIK2395/Databases/assets/50545334/3a73dc0e-984e-4d7e-97bd-046dd7e0305b)
 
 In the following table, an "X" marks each phenomenon that can occur.
 ![image](https://github.com/VIK2395/Databases/assets/50545334/4e16acaf-fa3f-4d59-ae25-e550e702ee8a)
