@@ -103,7 +103,8 @@ https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-model.html
 # About dead locks
 https://www.youtube.com/watch?v=y5h3mI9OvOI (30:50)
 
-When dead lock happens, the both transactions get rollback.
+When dead lock happens, the both transactions get rollback (NOT TRUE => CHECKED).\
+When dead lock happens, only the transaction that got dead lock gets rollback. The other continues.
 
 # LOCK WAIT TIMEOUT
 https://dev.mysql.com/doc/refman/8.4/en/innodb-parameters.html#sysvar_innodb_lock_wait_timeout
