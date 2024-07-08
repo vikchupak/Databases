@@ -8,6 +8,8 @@ https://dev.mysql.com/doc/refman/8.0/en/innodb-autocommit-commit-rollback.html
 # About dead locks
 https://www.youtube.com/watch?v=y5h3mI9OvOI (30:50)
 
+When dead lock happens, the both transactions get rollback.
+
 # Locks and isolation levels
 https://retool.com/blog/isolation-levels-and-locking-in-relational-databases
 
