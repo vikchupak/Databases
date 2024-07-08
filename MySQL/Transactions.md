@@ -5,6 +5,22 @@ https://dev.mysql.com/doc/refman/8.0/en/innodb-autocommit-commit-rollback.html
 
 <img width="653" alt="01" src="https://github.com/VIK2395/Databases/assets/50545334/760b95c3-5f4d-4258-ac77-d7a150247482">
 
+```mysql
+# Global scope
+SET @@GLOBAL.autocommit = 0;
+# Session scope
+SET @@SESSION.autocommit = 0;
+# Next transaction only
+SET @@autocommit = 0;
+
+# Global scope
+SELECT @@GLOBAL.autocommit = 0;
+# Session scope
+SELECT @@SESSION.autocommit = 0;
+# Next transaction only
+SELECT @@autocommit = 0;
+```
+
 # Locks and isolation levels
 https://retool.com/blog/isolation-levels-and-locking-in-relational-databases
 
