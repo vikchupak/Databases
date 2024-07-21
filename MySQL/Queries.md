@@ -103,9 +103,13 @@ __Can have parameters, and returns a value__
 https://www.youtube.com/watch?v=jVbj72YO-8s
 
 # JSON type
+https://www.youtube.com/watch?v=QZBxgX2OWbI
 
 <img width="960" alt="Json_in_mysql" src="https://github.com/VIK2395/Databases/assets/50545334/8d393326-d18f-48f3-bf5a-3cfe2f265cee">
 <img width="960" alt="db_jsons" src="https://github.com/VIK2395/Databases/assets/50545334/8e2b3173-c6eb-4d5c-bcd0-01fbb30e01ca">
+
+# Pagination (offset vs cursor)
+https://www.youtube.com/watch?v=zwDIN04lIpc
 
 # Full-text indexing and searching
 Investige this topic
