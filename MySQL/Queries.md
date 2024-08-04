@@ -30,6 +30,15 @@ Problem https://mariadb.com/kb/en/order-by-before-group-by/
 https://learnsql.com/cookbook/how-to-select-the-first-row-in-each-group-by-group/ (read row_number vs rank)\
 https://www.geeksforgeeks.org/how-to-select-the-first-row-of-each-group-by-in-sql/
 
+Spesial trick
+```mysql
+# Returns most fresh reports "grouped by" vin
+SELECT t1.*
+FROM reports t1
+LEFT JOIN reports t2 ON t1.vin = t2.vin AND r1.reportDate < t2.reportDate
+WHERE t2.vin IS NULL;
+```
+
 # Count total rows
 1. `SQL_CALC_FOUND_ROWS` + `SELECT FOUND_ROWS()`
 2. `SELECT COUNT(*)`
