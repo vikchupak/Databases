@@ -30,6 +30,21 @@ Problem https://mariadb.com/kb/en/order-by-before-group-by/
 https://learnsql.com/cookbook/how-to-select-the-first-row-in-each-group-by-group/ (read row_number vs rank)\
 https://www.geeksforgeeks.org/how-to-select-the-first-row-of-each-group-by-in-sql/
 
+# Count total rows
+1. `SQL_CALC_FOUND_ROWS` + `SELECT FOUND_ROWS()`
+2. `SELECT COUNT(*)`
+3. `SELECT COUNT(*) OVER()`
+
+1 is deprecated and doesn't use indexes and not always counts rows correctly when UNION is used
+- https://dev.mysql.com/worklog/task/?id=12615
+- https://dev.mysql.com/doc/refman/8.0/en/information-functions.html#function_found-rows
+- https://habr.com/ru/articles/64655/
+
+3 is much more slower than 2 with large tables. Tested in reality, difference is miliseconds against seconds.
+
+___So 2 is the best way___\
+https://stackoverflow.com/questions/186588/which-is-fastest-select-sql-calc-found-rows-from-table-or-select-count
+
 # Aggregate functions
 https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html
 
