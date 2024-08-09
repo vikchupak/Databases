@@ -67,7 +67,7 @@ https://dev.mysql.com/doc/refman/8.4/en/window-functions-usage.html
 - `PARTITION BY` - like grouping rows
 - `ORDER BY` - like ordering inside grouped rows
 
-![Screenshot from 2024-08-09 13-09-54](https://github.com/user-attachments/assets/de1595e7-d84a-4db3-b9cf-2ab63082234f)
+![Screenshot from 2024-08-09 13-11-37](https://github.com/user-attachments/assets/4557e4b0-768f-4645-bdbe-c9608a685138)
 
 __Winfow functions (Partition by) do not collapse rows__
 
