@@ -64,6 +64,9 @@ __Aggregate functions (Group by) collapse rows__
 # Winfow functions
 https://dev.mysql.com/doc/refman/8.4/en/window-functions-usage.html
 
+- `PARTITION BY` - like grouping rows
+- `ORDER BY` - like ordering inside grouped rows
+
 __Winfow functions (Partition by) do not collapse rows__
 
 ![image](https://github.com/VIK2395/Databases/assets/50545334/ee73f0a3-a1ce-49ac-a834-31fea001c294)
