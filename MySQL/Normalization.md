@@ -12,16 +12,16 @@ https://en.wikipedia.org/wiki/Database_normalization \
 https://www.javatpoint.com/dbms-normalization \
 https://www.youtube.com/watch?v=zqQxWdTpSIA
 
-__Unnormalized Form or Zero Normal Form (UNF or 0NF):__
+__Unnormalized Form or Zero Normal Form (UNF or 0NF)__ => skip
 
-__First Normal Form (1NF):__\
+## First Normal Form (1NF)
 Each field/cell contains a single/atomic value. A field/cell must not contain a set of values or a nested record.
 
-__Second Normal Form (2NF):__\
+## Second Normal Form (2NF)
 No partial dependence. When a column completely depends on PK.\
 Partial dependence. When a column depends on one part of a composite key, but not on the whole key.
 
-__Third Normal Form (3NF):__\
+## Third Normal Form (3NF)
 No transitive dependence.
 
 Functional Dependency is a direct relationship between two attributes (e.g., A -> B).\
@@ -47,8 +47,7 @@ A table does not contain any extraneous key attributes. An extraneous key attrib
 https://en.wikipedia.org/wiki/Elementary_key_normal_form#:~:text=Elementary%20key%20normal%20form%20(EKNF,the%20overlapping%20column(s) \
 https://www.youtube.com/watch?v=mAUe1KEylak
 
-__Enchanced 3NF | Boyce-Codd Normal Form (BCNF).__
-
+## Enchanced 3NF | Boyce-Codd Normal Form (BCNF)
 For every functional dependency A->B, A must be a superkey (or simply speaking a candicate key).
 
 ![Screenshot from 2024-06-14 19-02-06](https://github.com/VIK2395/Databases/assets/50545334/81b4aaa9-ffd3-4e14-8d32-05b517d9f6f0)
@@ -62,7 +61,7 @@ https://www.youtube.com/watch?v=NNjUhvvwOrk&list=PLLGlmW7jT-nTr1ory9o2MgsOmmx2w8
 
 ![Screenshot from 2024-06-14 19-15-11](https://github.com/VIK2395/Databases/assets/50545334/622f7d7d-ad12-40d3-b3de-6eb80d46933f)
 
-__Fourth normal form (4NF):__\
+## Fourth normal form (4NF)
 No multi-valued (->->) dependency.\
 Multi-valued dependency is a relationship between two attributes (e.g., A ->-> B).\
 If attribute A determines a set of attribute B values, it is denoted as A->-> B.
@@ -82,7 +81,7 @@ No Elementary Transitive Dependency.
 
 An elementary transitive dependency is a specific type of transitive dependency where a non-prime attribute depends on a candidate key, and the intermediate attribute on which it depends is not a candidate key.
 
-__Fifth normal form (5NF):__\
+## Fifth normal form (5NF)
 No join dependency.
 
 __Domain-key normal form (DKNF)__ => skip
