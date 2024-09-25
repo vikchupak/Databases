@@ -48,7 +48,7 @@ https://en.wikipedia.org/wiki/Elementary_key_normal_form#:~:text=Elementary%20ke
 https://www.youtube.com/watch?v=mAUe1KEylak
 
 ## Enchanced 3NF (E3NF) | Boyce-Codd Normal Form (BCNF)
-For every functional dependency A->B, A must be a superkey (or simply speaking a candicate key).
+For every functional dependency A->B, A must be a superkey (or simply speaking a candicate key - uniquely defines entire row).
 
 ![Screenshot from 2024-06-14 19-02-06](https://github.com/VIK2395/Databases/assets/50545334/81b4aaa9-ffd3-4e14-8d32-05b517d9f6f0)
 
