@@ -47,14 +47,14 @@ A table does not contain any extraneous key attributes. An extraneous key attrib
 https://en.wikipedia.org/wiki/Elementary_key_normal_form#:~:text=Elementary%20key%20normal%20form%20(EKNF,the%20overlapping%20column(s) \
 https://www.youtube.com/watch?v=mAUe1KEylak
 
-## Enchanced 3NF | Boyce-Codd Normal Form (BCNF)
+## Enchanced 3NF (E3NF) | Boyce-Codd Normal Form (BCNF)
 For every functional dependency A->B, A must be a superkey (or simply speaking a candicate key).
 
 ![Screenshot from 2024-06-14 19-02-06](https://github.com/VIK2395/Databases/assets/50545334/81b4aaa9-ffd3-4e14-8d32-05b517d9f6f0)
 
 https://www.youtube.com/watch?v=NNjUhvvwOrk&list=PLLGlmW7jT-nTr1ory9o2MgsOmmx2w8FB3&index=6
 
-### Simply speaking, non primary atribute shoudn't functionaly define a primary atribute or its part.
+### Simply speaking, non primary atribute shoudn't functionaly define a primary atribute (a primary attribute is an attribute that forms the primary key. A primary key can consist of multiple primary attributes - composite key).
 
 ![Screenshot from 2024-06-14 19-13-29](https://github.com/VIK2395/Databases/assets/50545334/daf07c8a-184e-486a-9db4-eba3d6170d14)
 ![Screenshot from 2024-06-14 19-16-20](https://github.com/VIK2395/Databases/assets/50545334/00366a42-318f-49de-8a34-87fb91191ff5)
