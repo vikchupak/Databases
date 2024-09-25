@@ -55,6 +55,8 @@ For every functional dependency A->B, A must be a superkey (or simply speaking a
 
 https://www.youtube.com/watch?v=NNjUhvvwOrk&list=PLLGlmW7jT-nTr1ory9o2MgsOmmx2w8FB3&index=6
 
+### Simply speaking, non primary atribute shoudn't functionaly define a primary atribute or its part.
+
 ![Screenshot from 2024-06-14 19-13-29](https://github.com/VIK2395/Databases/assets/50545334/daf07c8a-184e-486a-9db4-eba3d6170d14)
 ![Screenshot from 2024-06-14 19-16-20](https://github.com/VIK2395/Databases/assets/50545334/00366a42-318f-49de-8a34-87fb91191ff5)
 
