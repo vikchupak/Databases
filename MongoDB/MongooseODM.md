@@ -25,7 +25,8 @@ __replaceOne() and findOneAndReplace():__
 - if no match, the new doc won't be created.
 
 __updateOne() and findOneAndUpdate():__
-- doesn't removes fields, only updates;
+- `$set` doesn't removes fields, only updates specified;
+- without `$set` replaces all doc, but keeps `__v`, `createdAt`
 
 ```javascript
 const result1 = await Model.findOne({ vin }); // null if not found
