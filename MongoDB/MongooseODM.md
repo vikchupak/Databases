@@ -31,5 +31,13 @@ __updateOne() and findOneAndUpdate():__
 const result1 = await Model.findOne({ vin }); // null if not found
 const result2 = await Model.find(); // [] if not found
 await Model.create() // runs Mongoose validation, like required
-await Model.findOneAndUpdate() // doesn't run validation, and so it can write required fields as null
+await Model.findOneAndUpdate(
+  { orderId: 12345 },
+  { $set: { 'report.battery.conditionRating': 4 } }, // if $set is not used, will replace whole doc
+  {
+    new: true, // return updated doc
+    upsert: true, // update or insert
+    runValidators: true, // run mongoose validation. By default false, which means it can write required fields as null
+  }
+);
 ```
