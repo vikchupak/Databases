@@ -20,11 +20,11 @@ https://www.youtube.com/watch?v=FWVP7hhKI4Y
 
 # Some methods descriptions
 
-__replaceOne() and findOneAndReplace():__
+### replaceOne() and findOneAndReplace():
 - overwrites all non-_id properties (all previous get removed including timestamps and __v); We have to pass new values yourself to keep them https://mongoosejs.com/docs/timestamps.html;
 - if no match, the new doc won't be created.
 
-__updateOne() and findOneAndUpdate():__
+### updateOne() and findOneAndUpdate():
 - `$set` doesn't removes fields, only updates specified;
 - without `$set` replaces all doc, but keeps `__v`, `createdAt`
 
@@ -42,3 +42,11 @@ await Model.findOneAndUpdate(
   }
 );
 ```
+#### updateOne vs findOneAndUpdate:
+| Feature                    | `updateOne`                                         | `findOneAndUpdate`                                  |
+|----------------------------|----------------------------------------------------|----------------------------------------------------|
+| **Return Value**            | `WriteResult` object with status information       | The updated document (or the original document)    |
+| **Use Case**                | Simple update when you don’t need the updated document | Update with the need to access the document after the update |
+| **Use of `new` Option**     | Not applicable                                      | `new: true` returns the updated document           |
+| **Atomicity**               | Atomic update of the specified document            | Atomic update, but allows you to return the document |
+| **Options**                 | Limited options, mainly about the update operation | More flexible, including options for returning the document before/after update |
