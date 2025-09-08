@@ -1,4 +1,7 @@
-Repository about databsases.
+Repo about databsases.
+
+- ODM stands for Object-Document Mapper
+- ORM stands for Object-Relational Mapper
 
 Schema design:
 
