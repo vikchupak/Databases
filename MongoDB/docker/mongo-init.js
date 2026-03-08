@@ -1,5 +1,5 @@
 // rs.initiate() is run only once when you first create the replica set
-// The rs config is preserved in /data/db volume, so re-starting/re-creating container would not run this again
+// The rs config is preserved in /data/db volume, so re-starting/re-creating container would not run rs.initiate() again
 
 rs.initiate({
   _id: 'rs0',
