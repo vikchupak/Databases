@@ -1,1 +1,24 @@
+name: mongo-local
 
+networks:
+  api-network:
+    driver: bridge
+
+volumes:
+  mongo-local-data:
+
+services:
+  mongo-local:
+    container_name: mongo-local
+    image: mongo
+    restart: unless-stopped
+    volumes:
+      - mongo-local-data:/data/db
+      # Enable transaction support
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+    ports:
+      - "27017:27017"
+    # Enable transaction support
+    command: ["--replSet", "rs0", "--bind_ip_all"]
+    networks:
+      - api-network
