@@ -1,7 +1,7 @@
 # Manual replica set config
 
 ```bash
-# Enter mongo shell
+# While in container, enter mongo shell
 mongosh
 
 # Replica set status
