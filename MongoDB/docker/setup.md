@@ -26,3 +26,7 @@ mongodb://127.0.0.1:27017/?replicaSet=rs0
 # or
 mongodb://127.0.0.1:27017/?directConnection=true
 ```
+
+# Guide
+
+- [3 replicas example](https://medium.com/workleap/the-only-local-mongodb-replica-set-with-docker-compose-guide-youll-ever-need-2f0b74dd8384)
