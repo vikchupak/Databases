@@ -11,7 +11,7 @@ rs.status()
 cfg = rs.conf()
 
 # Update Replica set config
-cfg.members[0].host = "mongo-local:27017"   // or 127.0.0.1:27017
+cfg.members[0].host = "127.0.0.1:27017"
 
 rs.status()
 ```
