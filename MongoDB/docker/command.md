@@ -4,7 +4,7 @@
 # While in container, enter mongo shell
 mongosh
 
-# Replica set status
+# Get replica set status
 rs.status()
 
 # Replica set config
@@ -13,6 +13,10 @@ cfg = rs.conf()
 # Update Replica set config
 cfg.members[0].host = "127.0.0.1:27017"
 
+# Apply updated config
+rs.reconfig(cfg)
+
+# Get replica set status
 rs.status()
 ```
 
